@@ -1,0 +1,39 @@
+.App {
+  text-align: auto;
+}
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 50px;
+  vertical-align: middle;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+.Singup{
+  float: left;
+}
+
+.Foot{
+  background-color: black;
+  color: skyblue;
+  opacity: 0.8;
+  
+  font-style: italic;
+  width: 100%;
+}
+.fb{
+  float: right;
+  width: 10%;
+  
+}
+.address{
+  width: 30%;
+  margin: auto;
+  text-align: center;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
