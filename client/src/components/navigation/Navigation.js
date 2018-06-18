@@ -1,8 +1,20 @@
 import React from 'react';
-import logo from '../logo.svg'
-import {Collapse,Navbar, NavbarToggler,NavbarBrand,Nav,NavItem,NavLink,UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import logo from '../../logo.svg'
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem } from 'reactstrap';
+  import Tabbar from './Tabbar';
 
-class Navigation extends React.Component {
+export default class Navigation extends React.Component {
   constructor(props) {
     super(props);
 
@@ -24,10 +36,12 @@ class Navigation extends React.Component {
                 color="skyblue" href="/"><i>Soweto <img src={logo} className="App-logo" alt="logo" />Observer</i>
           </NavbarBrand>
 
+          <Tabbar/>
+          
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              {/* <UncontrolledDropdown nav inNavbar>     
+              <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>Login</DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>Viewer</DropdownItem>
@@ -35,8 +49,7 @@ class Navigation extends React.Component {
                   <DropdownItem divider />
                   <DropdownItem>Administrator</DropdownItem>
                 </DropdownMenu>
-              </UncontrolledDropdown> */}
-              
+              </UncontrolledDropdown>
             </Nav>
           </Collapse>
         </Navbar>
@@ -44,4 +57,3 @@ class Navigation extends React.Component {
     );
   }
 }
-export default Navigation

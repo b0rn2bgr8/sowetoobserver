@@ -1,3 +1,5 @@
+/* Morapedi */
+
 .App {
   text-align: auto;
 }
@@ -12,6 +14,10 @@
 }
 .Singup{
   float: left;
+}
+
+.head{
+  font-size: 88em;
 }
 
 .Foot{
@@ -36,4 +42,31 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+/* Kgaogelo */
+
+.Container{
+  width: 80%;
+  margin: auto;
+  -webkit-box-shadow: 10px 10px 48px -13px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 48px -13px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 48px -13px rgba(0,0,0,0.75);
+}
+
+.Footers{
+  text-align: center;
+  background-color: snow;
+  color: darkgrey;
+}
+
+.NavTab{
+  background-color: whitesnow;
+  
+}
+
+.HeaderNav{
+  background-color: white;
+  
+  
 }
